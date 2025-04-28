@@ -123,6 +123,7 @@ HAVING MIN(workhour) < 10;
 Write the SQL query that accomplishes the grouping of data by age, calculates the maximum income for each age group, and includes only those age groups where the maximum income is greater than 2,000,000.
 
 Sample table: employee
+
 ![image](https://github.com/user-attachments/assets/15eaa93f-2263-40b6-bd81-7488b1f2a65c)
 ~~~
 SELECT age, MAX(income) AS 'MAX(income)'
@@ -140,6 +141,7 @@ HAVING MAX(income) > 2000000;
 Write the SQL query that accomplishes the selection of number of products for each category from products table which includes only those products where the category ID is greater than 2.
 
 Sample table: products
+
 ![image](https://github.com/user-attachments/assets/042e49b9-6623-459e-b953-57088965246d)
 
 ~~~
