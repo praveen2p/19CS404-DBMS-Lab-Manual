@@ -142,7 +142,7 @@ ADD COLUMN last_name varchar(50);
 
 
 **Question 3**
-~~~
+
 Create a new table named products with the following specifications:
 product_id as INTEGER and primary key.
 product_name as TEXT and not NULL.
@@ -152,7 +152,7 @@ A CHECK constraint at the table level to ensure:
 list_price is greater than or equal to discount
 discount is greater than or equal to 0
 list_price is greater than or equal to 0
-~~~
+
 
 ~~~
 create table products(
