@@ -84,7 +84,7 @@ where product_id=15 and sale_date='2023-01-31';
 
 **Question 3**
 Write a SQL statement to update the product_name as 'Grapefruit' whose product_id is 4 in the products table.
-
+~~~
 products table
 
 ---------------
@@ -92,6 +92,7 @@ product_id
 product_name
 category_id
 availability
+~~~
 ~~~
 update products
 set product_name = 'Grapefruit'
