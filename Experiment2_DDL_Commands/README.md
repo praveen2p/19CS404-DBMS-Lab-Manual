@@ -172,11 +172,10 @@ null check(discount>=0));
 
 
 **Question 4**
-~~~
-Insert all books from Out_of_print_books into Books
 
+Insert all books from Out_of_print_books into Books
 Table attributes are ISBN, Title, Author, Publisher, YearPublished
-~~~
+
 
 ~~~
 INSERT into Books
@@ -190,13 +189,12 @@ FROM  Out_of_print_books;
 
 
 **Question 5**
-~~~
 Create a table named Tasks with the following columns:
 
 TaskID as INTEGER
 TaskName as TEXT
 DueDate as DATE
-~~~
+
 ~~~
 create table Tasks(
 TaskID INTEGER,
@@ -210,14 +208,14 @@ DueDate DATE);
 
 
 **Question 6**
-~~~
+
 Create a table named Bonuses with the following constraints:
 BonusID as INTEGER should be the primary key.
 EmployeeID as INTEGER should be a foreign key referencing Employees(EmployeeID).
 BonusAmount as REAL should be greater than 0.
 BonusDate as DATE.
 Reason as TEXT should not be NULL.
-~~~
+
 
 ~~~
 create table Bonuses(
@@ -233,14 +231,13 @@ foreign key(EmployeeID) references Employees(EmployeeID));
 ![image](https://github.com/user-attachments/assets/aa782fce-6239-4d65-98c9-3dd9b6881ec0)
 
 **Question 7**
-~~~
 Create a table named Invoices with the following constraints:
 InvoiceID as INTEGER should be the primary key.
 InvoiceDate as DATE.
 Amount as REAL should be greater than 0.
 DueDate as DATE should be greater than the InvoiceDate.
 OrderID as INTEGER should be a foreign key referencing Orders(OrderID).
-~~~
+
 ~~~
 create table Invoices(
 InvoiceID INTEGER primary key,
@@ -258,13 +255,13 @@ foreign key (OrderID) references Orders(OrderID));
 
 
 **Question 8**
-~~~
+
 Create a table named Members with the following columns:
 
 MemberID as INTEGER
 MemberName as TEXT
 JoinDate as DATE
-~~~
+
 ~~~
 create table Members(
 MemberID INTEGER,
