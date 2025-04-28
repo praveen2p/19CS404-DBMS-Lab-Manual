@@ -104,12 +104,10 @@ WHERE grade IS NOT NULL;
 
 
 **Question 4**
-~~~
-Write the SQL query that accomplishes the grouping of data by joining date (jdate), calculates the minimum work hours for each date, and excludes dates where the minimum work hour is not less than 10.
 
+Write the SQL query that accomplishes the grouping of data by joining date (jdate), calculates the minimum work hours for each date, and excludes dates where the minimum work hour is not less than 10.
 Sample table: employee1
-![image](https://github.com/user-attachments/assets/e039050e-4337-4181-84c4-21d3192195a6)
-~~~
+
 ~~~
 SELECT jdate,MIN(workhour) AS  'MIN(workhour)'
 FROM employee1
