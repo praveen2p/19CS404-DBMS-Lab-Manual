@@ -16,6 +16,9 @@ CREATE TABLE (
   ...
 );
 ```
+
+
+
 ### 2. ALTER
 Used to add, modify, drop, or rename fields in an existing relation.
 (a) ADD
@@ -34,6 +37,8 @@ ALTER TABLE relation_name DROP COLUMN field_name;
 ```sql
 ALTER TABLE relation_name RENAME COLUMN old_field_name TO new_field_name;
 ```
+
+
 ### 3. DROP TABLE
 Used to permanently delete the structure and data of a table.
 ```sql
@@ -105,123 +110,171 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 --
--- Paste Question 1 here
+![Screenshot 2025-05-03 142746](https://github.com/user-attachments/assets/eacdff4b-f695-4f5a-b8cb-f72cbcc72200)
+
 
 ```sql
--- Paste your SQL code below for Question 1
+create table Members(MemberID INTEGER, MemberName TEXT, JoinDate DATE);
 ```
 
 **Output:**
 
-![Output1](output.png)
+![Screenshot 2025-05-03 142802](https://github.com/user-attachments/assets/a93c1e12-f324-4c16-b7f7-e271e9f9135a)
+
 
 **Question 2**
 ---
--- Paste Question 2 here
+![Screenshot 2025-05-03 142818](https://github.com/user-attachments/assets/b32194e6-da49-4661-852e-e79060b8e975)
+
 
 ```sql
--- Paste your SQL code below for Question 2
+CREATE TABLE Invoices 
+(InvoiceID INTEGER UNIQUE,
+InvoiceDate DATE,
+DueDate DATE CHECK(DueDate>InvoiceDate),
+Amount REAL CHECK(Amount>0)
+);
 ```
 
 **Output:**
 
-![Output2](output.png)
+![Screenshot 2025-05-03 142835](https://github.com/user-attachments/assets/256326cf-d4d3-45fc-94a7-3a37347d7a94)
+
 
 **Question 3**
 ---
--- Paste Question 3 here
+
+![Screenshot 2025-05-03 142850](https://github.com/user-attachments/assets/9659acc3-debf-49f8-812d-384267cf1b95)
 
 ```sql
--- Paste your SQL code below for Question 3
+CREATE TABLE Invoices 
+(InvoiceID INTEGER UNIQUE,
+InvoiceDate DATE,
+DueDate DATE CHECK(DueDate>InvoiceDate),
+Amount REAL CHECK(Amount>0)
+);
 ```
 
 **Output:**
 
-![Output3](output.png)
+![Screenshot 2025-05-03 142905](https://github.com/user-attachments/assets/7b269592-9848-4bf2-b5f4-3fcef8f392bb)
+
 
 **Question 4**
 ---
--- Paste Question 4 here
+![Screenshot 2025-05-03 142921](https://github.com/user-attachments/assets/285029e6-5876-49b8-92d9-c2aa00670ea5)
+
 
 ```sql
--- Paste your SQL code below for Question 4
+ALTER TABLE Companies RENAME name TO first_name;
+ALTER TABLE Companies ADD COLUMN mobilenumber number;
+ALTER TABLE Companies ADD COLUMN DOB Date;
+ALTER TABLE Companies ADD COLUMN State varchar(30);
 ```
 
 **Output:**
+![Screenshot 2025-05-03 142936](https://github.com/user-attachments/assets/82d20f19-0d9a-45a8-b1b7-6a8ae1bfb5f7)
 
-![Output4](output.png)
+
 
 **Question 5**
 ---
--- Paste Question 5 here
+
+![Screenshot 2025-05-03 142952](https://github.com/user-attachments/assets/862a87af-9d15-469d-9f26-9852144d55da)
 
 ```sql
--- Paste your SQL code below for Question 5
+insert into Products (ProductID,ProductName,Price,Stock) select ProductID,ProductName,Price,Stock from Discontinued_products;
 ```
 
 **Output:**
+![Screenshot 2025-05-03 143010](https://github.com/user-attachments/assets/1d3bca42-afe3-4094-a736-8928718f93a1)
 
-![Output5](output.png)
+
 
 **Question 6**
 ---
--- Paste Question 6 here
+![Screenshot 2025-05-03 143024](https://github.com/user-attachments/assets/e49edbad-b73e-418e-8e4f-9cbe178bf252)
+
 
 ```sql
--- Paste your SQL code below for Question 6
+ALTER TABLE Companies ADD COLUMN designation varchar(50);
+ALTER TABLE Companies ADD COLUMN net_salary number;
+ALTER TABLE Companies ADD COLUMN dob date;
 ```
 
 **Output:**
 
-![Output6](output.png)
+![Screenshot 2025-05-03 143039](https://github.com/user-attachments/assets/60ab5e62-bc0d-4a1f-bdfb-6242584f131c)
+
 
 **Question 7**
 ---
--- Paste Question 7 here
+![Screenshot 2025-05-03 143053](https://github.com/user-attachments/assets/2847178e-2dc2-42c7-8674-e3fca018236f)
+
 
 ```sql
--- Paste your SQL code below for Question 7
+CREATE TABLE Shipments
+(ShipmentID INTEGER PRIMARY KEY,
+ShipmentDate DATE,
+SupplierID INTEGER,
+OrderID INTEGER,
+FOREIGN KEY(SupplierID) REFERENCES Suppliers,
+FOREIGN KEY(OrderID) REFERENCES Orders
+);
 ```
 
 **Output:**
+![Screenshot 2025-05-03 143106](https://github.com/user-attachments/assets/b2ec90bb-0abd-444b-b82d-a460b2b46cc2)
 
-![Output7](output.png)
+
 
 **Question 8**
 ---
--- Paste Question 8 here
+![Screenshot 2025-05-03 143121](https://github.com/user-attachments/assets/3f872695-f2ea-4f49-befd-7b517fb3c371)
 
 ```sql
--- Paste your SQL code below for Question 8
+CREATE TABLE jobs 
+(job_id INTEGER,
+job_title VARCHAR(30) DEFAULT "",
+min_salary NUMBER DEFAULT '8000',
+max_salary NUMBER DEFAULT NULL
+);
 ```
 
 **Output:**
+![Screenshot 2025-05-03 143138](https://github.com/user-attachments/assets/38079b69-5e18-467a-a416-bd51a3cbc2cb)
 
-![Output8](output.png)
+
 
 **Question 9**
 ---
--- Paste Question 9 here
+
+![Screenshot 2025-05-03 143156](https://github.com/user-attachments/assets/50f76b29-a036-4971-9780-034dee11f745)
 
 ```sql
--- Paste your SQL code below for Question 9
+INSERT INTO Customers(CustomerID,Name,Address,City,ZipCode) VALUES (306,"Diana Prince","Themyscira",NULL,NULL);
+INSERT INTO Customers(CustomerID,Name,Address,City,ZipCode) VALUES (307,"Bruce Wayne","Wayne Manor","Gotham",10007);
+INSERT INTO Customers(CustomerID,Name,Address,City,ZipCode) VALUES (308,"Peter Parker","Queens",NULL,11375);
 ```
 
 **Output:**
+![Screenshot 2025-05-03 143210](https://github.com/user-attachments/assets/e00edfb1-d7d1-4330-a014-a67bb7447fdb)
 
-![Output9](output.png)
+
 
 **Question 10**
 ---
--- Paste Question 10 here
+![Screenshot 2025-05-03 143232](https://github.com/user-attachments/assets/7895c4b7-a6f1-40cc-9264-f20019f40617)
+
 
 ```sql
--- Paste your SQL code below for Question 10
+INSERT INTO Customers(CustomerID,Name,Address,City,ZipCode) VALUES (301,"Michael Jordan","123 Maple St","Chicago",60616);
 ```
 
 **Output:**
 
-![Output10](output.png)
+![Screenshot 2025-05-03 143246](https://github.com/user-attachments/assets/c0e071a8-627a-4b22-80c3-0207272e3b42)
+
 
 
 ## RESULT
