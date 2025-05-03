@@ -47,123 +47,153 @@ SELECT column1, column2 FROM table_name WHERE condition;
 ```
 **Question 1**
 --
--- Paste Question 1 here
+![Screenshot 2025-05-03 145707](https://github.com/user-attachments/assets/2f8a415b-d015-4fc6-8820-ad528df1696e)
+
 
 ```sql
--- Paste your SQL code below for Question 1
+UPDATE EMPLOYEES
+SET email='not available',commission_pct=0.55 where department_id= 110;
 ```
 
 **Output:**
 
-![Output1](output.png)
+![Screenshot 2025-05-03 145728](https://github.com/user-attachments/assets/82766e0a-2627-4c04-902f-c3745b1e8e92)
+
 
 **Question 2**
 ---
--- Paste Question 2 here
+![Screenshot 2025-05-03 145915](https://github.com/user-attachments/assets/f1d42597-005c-494a-a8a4-fd7dea328133)
+
 
 ```sql
--- Paste your SQL code below for Question 2
+update Products
+set quantity=1.1*quantity;
 ```
 
 **Output:**
 
-![Output2](output.png)
+![Screenshot 2025-05-03 145929](https://github.com/user-attachments/assets/aa577aaa-02f9-4d3c-b4c8-2c85c970d92c)
+
 
 **Question 3**
 ---
--- Paste Question 3 here
+![Screenshot 2025-05-03 145946](https://github.com/user-attachments/assets/8b6d70d7-bb02-4f47-8f75-7b6ddceaa474)
+
 
 ```sql
--- Paste your SQL code below for Question 3
+update employees
+set email='Unavailable';
 ```
 
 **Output:**
 
-![Output3](output.png)
+![Screenshot 2025-05-03 150029](https://github.com/user-attachments/assets/f791dffe-ca3b-477b-a726-b4c02d665fc0)
+
 
 **Question 4**
 ---
--- Paste Question 4 here
+![Screenshot 2025-05-03 150046](https://github.com/user-attachments/assets/c9e44e71-c6ab-469b-a816-c214b2f175d1)
+
 
 ```sql
--- Paste your SQL code below for Question 4
+update employees
+set hire_date='2024-01-24' where department_id=50;
 ```
 
 **Output:**
+![Screenshot 2025-05-03 150104](https://github.com/user-attachments/assets/85841151-d4c8-494b-a8d3-07dc19832555)
 
-![Output4](output.png)
+
 
 **Question 5**
 ---
--- Paste Question 5 here
+
+![Screenshot 2025-05-03 150121](https://github.com/user-attachments/assets/e0430b47-9c69-4185-b246-1fa7f6c875a5)
 
 ```sql
--- Paste your SQL code below for Question 5
+delete from customer
+where GRADE<2;
 ```
 
 **Output:**
+![Screenshot 2025-05-03 150132](https://github.com/user-attachments/assets/786edc81-88cb-4db0-9fe6-008b80fe979c)
 
-![Output5](output.png)
 
 **Question 6**
 ---
--- Paste Question 6 here
+![Screenshot 2025-05-03 150211](https://github.com/user-attachments/assets/675cc74e-096e-49b7-84bc-26f9cdc8c35b)
+
 
 ```sql
--- Paste your SQL code below for Question 6
+SELECT EMPID,EMPPOSITION,DATEOFJOINING,SALARY FROM EMPLOYEEPOSITION 
+WHERE SALARY BETWEEN 50000 AND 100000;
 ```
 
 **Output:**
 
-![Output6](output.png)
+![Screenshot 2025-05-03 150158](https://github.com/user-attachments/assets/d1bf9414-aa81-444a-8174-30558f4e8418)
+
 
 **Question 7**
 ---
--- Paste Question 7 here
+![Screenshot 2025-05-03 150211](https://github.com/user-attachments/assets/c58ab806-2488-472d-920d-1d2b55e495dc)
+
 
 ```sql
--- Paste your SQL code below for Question 7
+SELECT * FROM EMPLOYEEINFO WHERE EMPFNAME LIKE 'S%';
 ```
 
 **Output:**
+![Screenshot 2025-05-03 150224](https://github.com/user-attachments/assets/b831c3e4-2832-43f9-860c-192d8293caad)
 
-![Output7](output.png)
+
 
 **Question 8**
 ---
--- Paste Question 8 here
+
+![Screenshot 2025-05-03 150236](https://github.com/user-attachments/assets/a7a43c3d-9187-4819-96d0-d2cb0bd95893)
 
 ```sql
--- Paste your SQL code below for Question 8
+SELECT ID,VALUE1,
+CASE
+WHEN VALUE1%2!=0 THEN 'Odd'
+ELSE 'Even'
+END AS parity
+FROM Calculations;
 ```
 
 **Output:**
 
-![Output8](output.png)
+![Screenshot 2025-05-03 150250](https://github.com/user-attachments/assets/404ae325-3a27-426a-a560-bf3cb492c038)
 
 **Question 9**
 ---
--- Paste Question 9 here
+
+![Screenshot 2025-05-03 150305](https://github.com/user-attachments/assets/17c78245-f83e-4c54-beeb-c3998382b36b)
 
 ```sql
--- Paste your SQL code below for Question 9
+SELECT CUSTOMER_ID,CUST_NAME,CITY,GRADE,SALESMAN_ID FROM CUSTOMER WHERE GRADE IS NULL;
 ```
 
 **Output:**
 
-![Output9](output.png)
+![Screenshot 2025-05-03 150319](https://github.com/user-attachments/assets/30785337-5fd1-4c06-887a-d5b376ba4f6b)
+
 
 **Question 10**
 ---
--- Paste Question 10 here
+![Screenshot 2025-05-03 150340](https://github.com/user-attachments/assets/e578f6b9-7a87-4e4f-b8f4-64abe04d1751)
+
 
 ```sql
--- Paste your SQL code below for Question 10
+SELECT ID,ROUND(DECIMAL,3) AS rounded_value
+FROM CALCULATIONS;
 ```
 
 **Output:**
 
-![Output10](output.png)
+![Screenshot 2025-05-03 150353](https://github.com/user-attachments/assets/31b45624-e2cc-4e25-ae58-c0c0031e612e)
+
 
 ## RESULT
 Thus, the SQL queries to implement DML commands have been executed successfully.
