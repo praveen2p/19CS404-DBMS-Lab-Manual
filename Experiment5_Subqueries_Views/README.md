@@ -160,8 +160,8 @@ order by id asc;
 
 **Question 7**
 ---
+![Screenshot 2025-05-03 154554](https://github.com/user-attachments/assets/b1582985-38f4-49c4-8bd6-262a137a15a2)
 
-![Screenshot 2025-05-03 153748](https://github.com/user-attachments/assets/8a115975-bd06-433e-a2f6-7f07a4a45bc8)
 
 ```sql
 SELECT *
@@ -176,13 +176,13 @@ WHERE age < (
 
 **Output:**
 
-![Screenshot 2025-05-03 153828](https://github.com/user-attachments/assets/74019d2e-0cef-4401-9e2f-6c98268bc66b)
+![Screenshot 2025-05-03 154607](https://github.com/user-attachments/assets/90ae3b9f-7ff7-4a75-8fbb-fc97633ff2cc)
 
 
 **Question 8**
 ---
 
-![Screenshot 2025-05-03 153842](https://github.com/user-attachments/assets/b8296993-f59b-41e5-9971-08411b3d67fa)
+![Screenshot 2025-05-03 154621](https://github.com/user-attachments/assets/51788f34-0907-4983-8f98-7913c31e70e3)
 
 ```sql
 SELECT name, city
@@ -197,10 +197,12 @@ WHERE city IN (
 
 **Output:**
 
+![Screenshot 2025-05-03 154636](https://github.com/user-attachments/assets/57d04770-abce-4fb1-8524-773c06577796)
 
 
 **Question 9**
 ---
+![Screenshot 2025-05-03 154648](https://github.com/user-attachments/assets/5a760c7c-6120-43d9-921f-c752fcec2883)
 
 
 ```sql
@@ -215,10 +217,12 @@ WHERE dosage = (
 
 **Output:**
 
+![Screenshot 2025-05-03 154700](https://github.com/user-attachments/assets/162a0c9c-65f9-47d1-85ac-d2a54064cfb0)
 
 
 **Question 10**
 ---
+![Screenshot 2025-05-03 154714](https://github.com/user-attachments/assets/b86afdc2-efce-48be-9e73-f5c4c2bef50a)
 
 
 ```sql
@@ -230,6 +234,7 @@ WHERE s.city = 'New York';
 ```
 
 **Output:**
+![Screenshot 2025-05-03 154726](https://github.com/user-attachments/assets/69baf715-5d17-438f-9308-113379618e10)
 
 
 
