@@ -214,14 +214,16 @@ Reversed number of 1234 is 4321
 ---
 
 ## 5. Write a PL/SQL Procedure to Display the Multiplication Table of a Number
+```
 
 ### Steps:
 - Create a procedure named print_table.
 - Accept an input number.
 - Use a loop from 1 to 10 to multiply the input number.
 - Display the multiplication results using DBMS_OUTPUT.PUT_LINE.
-```
-*Program:*
+
+## Program:
+
 sql
 SET SERVEROUTPUT ON;
 
@@ -239,10 +241,9 @@ BEGIN
     print_table(5);
 END;
 /
+```
 
-
-
-*Output:*
+## Output:*
 
 ![image](https://github.com/user-attachments/assets/12625873-6b80-4936-8276-50f607cf3f82)
 
