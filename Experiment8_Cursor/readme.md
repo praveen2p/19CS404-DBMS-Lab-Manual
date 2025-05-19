@@ -154,7 +154,6 @@ The program should display the employee details or an error message.
 - Implement exception handling to catch and display relevant error messages.
 
 ## PL/SQL query:
-
 SET SERVEROUTPUT ON;
 /
 
