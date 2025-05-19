@@ -77,7 +77,6 @@ END;
 - Implement exception handling to catch the relevant exceptions and display appropriate messages.
 
 **PL/SQL query:**
-
 ```
 -- Enable output
 SET SERVEROUTPUT ON;
@@ -130,11 +129,13 @@ EXCEPTION
 END;
 /
 ```
+
 **Required Output:**  
 The program should display the employee details or an error message.
 
-**Output:**  
-![image](https://github.com/user-attachments/assets/d2642462-e6a3-4444-a95e-d33e14b86a84)
+**Output:**
+
+![image](https://github.com/user-attachments/assets/7439ba61-a810-4591-9b95-3d4396ea4ce9)
 
 
 ---
@@ -153,7 +154,8 @@ The program should display the employee details or an error message.
 - Use a parameterized cursor to accept a salary range as input and fetch employees within that range.
 - Implement exception handling to catch and display relevant error messages.
 
-## PL/SQL query:
+**PL/SQL query:**
+```
 SET SERVEROUTPUT ON;
 /
 
@@ -224,11 +226,14 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('An unexpected error occurred: ' || SQLERRM);
 END;
 /
-## Required Output:
+```
+
+**Required Output:**  
 The program should display the employee details within the specified salary range or an error message if no data is found.
 
-**Output:**  
-![image](https://github.com/user-attachments/assets/d9ac50b0-aad8-4a36-b33f-e93ab610d9fb)
+**Output:**
+
+![image](https://github.com/user-attachments/assets/52ca7d6e-4b8b-4feb-942e-e8948c13006c)
 
 ---
 
@@ -246,7 +251,8 @@ The program should display the employee details within the specified salary rang
 - Use a cursor FOR loop to fetch and display employee names along with their department numbers.
 - Implement exception handling to catch the relevant exceptions.
 
-## PL/SQL query:
+**PL/SQL query:**
+```
 -- Enable DBMS output
 SET SERVEROUTPUT ON;
 /
@@ -297,12 +303,13 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('An unexpected error occurred: ' || SQLERRM);
 END;
 /
-## Required Output:
+```
+**Required Output:**  
 The program should display employee names with their department numbers or the appropriate error message if no data is found.
 
-**Output:**  
-![image](https://github.com/user-attachments/assets/f2f9669a-75e8-4919-90a6-320203cfc9fb)
+**Output:**
 
+![image](https://github.com/user-attachments/assets/c7d08b38-9976-4fdf-a18b-bcd8e375d9da)
 
 ---
 
@@ -320,7 +327,8 @@ The program should display employee names with their department numbers or the a
 - Declare a cursor using `%ROWTYPE` to fetch complete rows from the `employees` table.
 - Implement exception handling to catch the relevant exceptions and display appropriate messages.
 
-- # PL/SQL query:
+**PL/SQL query:**
+```
 -- Enable DBMS output
 SET SERVEROUTPUT ON;
 
@@ -369,12 +377,13 @@ EXCEPTION
     DBMS_OUTPUT.PUT_LINE('An unexpected error occurred.');
 END;
 /
-## Required Output:
+```
+**Required Output:**  
 The program should display employee records or the appropriate error message if no data is found.
 
-**Output:**  
-![image](https://github.com/user-attachments/assets/6ef1960d-03b9-4a62-8ed9-1f94204e9d00)
+**Output:**
 
+![image](https://github.com/user-attachments/assets/584a57d0-eb76-4927-ab92-a71efc09f3f9)
 
 ---
 
@@ -392,8 +401,9 @@ The program should display employee records or the appropriate error message if 
 - Use a cursor with the `FOR UPDATE` clause to lock the rows of employees in a specific department and update their salary.
 - Implement exception handling to handle `NO_DATA_FOUND` or other errors that may occur.
 
-- ## PL/SQL query:
-  BEGIN
+**PL/SQL query:**
+```
+BEGIN
     EXECUTE IMMEDIATE 'DROP TABLE employees';
 EXCEPTION
     WHEN OTHERS THEN
@@ -452,16 +462,15 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('An unexpected error occurred: ' || SQLERRM);
 END;
 /
-
-## Required Output:
+```
+**Required Output:**  
 The program should update employee salaries and display a message, or it should display an error message if no data is found.
 
-**Output:**  
-![image](https://github.com/user-attachments/assets/e3a39198-1d26-4d81-b6fe-7820b041bcd3)
+**Output:**
 
+![image](https://github.com/user-attachments/assets/6eadd329-c0a5-44ed-bc19-0107023fd59c)
 
-
+---
 
 ## RESULT
 Thus, the program successfully executed and displayed employee details using a cursor. 
-
