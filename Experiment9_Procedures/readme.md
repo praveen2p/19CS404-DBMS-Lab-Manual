@@ -176,7 +176,7 @@ END;
 - Return the reversed number.
 - Call the function and display the output.
 ```
-*Program:*
+**.Program:*
 sql
 SET SERVEROUTPUT ON;
 
@@ -203,14 +203,14 @@ END;
 
 
 
-*Output:*
+## Output:*
 
 ![image](https://github.com/user-attachments/assets/89d0ded7-a2f9-467c-b0ef-f20971a33d79)
 
 *Expected Output:*  
 Reversed number of 1234 is 4321
 
-```
+
 ---
 
 ## 5. Write a PL/SQL Procedure to Display the Multiplication Table of a Number
@@ -221,9 +221,9 @@ Reversed number of 1234 is 4321
 - Accept an input number.
 - Use a loop from 1 to 10 to multiply the input number.
 - Display the multiplication results using DBMS_OUTPUT.PUT_LINE.
-
+```
 ## Program:
-
+```
 sql
 SET SERVEROUTPUT ON;
 
@@ -244,11 +244,12 @@ END;
 ```
 
 ## Output:*
+```
 
 ![image](https://github.com/user-attachments/assets/12625873-6b80-4936-8276-50f607cf3f82)
 
-```
-*Expected Output:*  
+
+* Expected Output:*  
 Multiplication table of 5:  
 5 x 1 = 5  
 5 x 2 = 10  
